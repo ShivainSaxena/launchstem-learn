@@ -1,0 +1,49 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #013c58;
+  --main-accent: #2f9edd;
+  --sub-accent: #013c58;
+}
+
+body {
+  background-color: var(--background);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  transition: all 0.3s;
+  background-color: var(--main-accent);
+  &:hover {
+    background-color: var(--sub-accent);
+  }
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(
+    135deg,
+    var(--background) 0%,
+    var(--main-accent) 100%
+  );
+}
+
+select option {
+  background-color: var(--background);
+  color: white;
+}
