@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import MarkdownRenderer from "./MarkdownRenderer";
 import { useState } from "react";
 
 function LessonContent({ lesson, nextItem, prevItem, courseId }) {
